@@ -18,7 +18,6 @@ Example 2:
 Input: n = 25
 Output: 1389537
 
-```
 class Solution:
     def tribonacci(self, n: int) -> int:
         T = [0, 1, 1]
@@ -28,4 +27,3 @@ class Solution:
             #泰波那契序列 Tn 定义Tn+3 = Tn + Tn+1 + Tn+2
             T = [T[1], T[2], sum(T)]
         return T[-1]
-```
